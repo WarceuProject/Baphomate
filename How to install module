@@ -1,0 +1,12 @@
+npm install @adiwajshing/baileys
+npm install @adiwajshing/keyed-db
+npm install @bochilteam/scraper
+npm install @vitalets/google-translate-api
+npm install awesome-phonenumber
+npm install amethyste-api
+npm install axios
+npm install cfonts
+npm install chalk
+npm install cheerio
+
+selebihnya nya ada di package.json nanti tinggal npm install aja
