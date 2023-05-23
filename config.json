@@ -1,13 +1,13 @@
-{ 
+{
   "ChatOwner": "6285691724140@s.whatsapp.net",
   "ownerNumber": "6285691724140",
   "botName": "Baphomate-bot",
   "ownerName": "Null",
   "sessionName": "session",
-  "footer": "© Null",
+  "footer": "ᵇᵖ - ᴮᵒᵗ",
   "api_lolkey": "SadTeams",
-  "group":{
-  "judul": "-",
-  "link": "="
+  "group": {
+    "judul": "-",
+    "link": "="
   }
 }

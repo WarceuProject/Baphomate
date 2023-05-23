@@ -4,15 +4,16 @@
 
 var monoSpace = '```'
 
-exports.listmenu = (sender,prefix,ad,jumlahcmd,jumlahharian,namenya,premnya,isOwner,usernya,romnya,jam,tanggal,no,ucapanWaktu) => {
+exports.allmenu = (sender,prefix,ad,jumlahcmd,jumlahharian,namenya,premnya,isOwner,usernya,romnya,jam,tanggal,no,ucapanWaktu,fot) => {
 return`
 ╭──❍ ⟩>「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❍
 ├ *Nama* : ${namenya}
 ├ *Number* : @${sender.split('@')[0]}
 ├ *Premium* : ${premnya}
 ╰───────⭓
+
 ╭──❍ ⟩>「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❍
-├ *Nama Bot* : Baphomate
+├ *Nama Bot* : 𝗕𝗮𝗽𝗵𝗼𝗺𝗮𝘁𝗲 - 𝗕𝗼𝘁
 ├ *Owner* : ${isOwner}
 ├ *Mode* : Public
 ├ *Prefix* : 「 ! 」
@@ -21,8 +22,9 @@ return`
 ├ *Terdaftar* : ${usernya}
 ├ *Room Chat* : ${romnya}
 ╰───────⭓
-╭──❍ ⟩>「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼 」❍
-├ *Date* : ${jam} WIB ${tanggal}
+
+╭──❍ ⟩>「 𝗝𝗲𝗽𝗮𝗻𝗴 」❍
+├ *Date* : ${jam} ${tanggal}
 ├ *Salam* : ${ucapanWaktu}
 ╰───────⭓
 
@@ -44,6 +46,27 @@ return`
 │⭔ !speedtest
 │⭔ !ping
 ╰───────⭓
+
+╭──❍ ⟩>
+│⭔ *NSFW MENU*
+│⭔ !Kacamata
+│⭔ !ahegao
+│⭔ !kobo
+│⭔ !ass
+│⭔ !yuri
+│⭔ !blowjob
+╰───────⭓
+
+╭──❍ ⟩>
+│⭔ *ASUPAN MENU*
+│⭔ !asupanloli
+│⭔ !asupanjp
+│⭔ !asupanth
+│⭔ !ass
+│⭔ !yuri
+│⭔ !blowjob
+╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙐𝙎𝙀𝙍 𝙈𝙀𝙉𝙐 
 │⭔ !verify 
@@ -57,31 +80,13 @@ return`
 │⭔ !changename
 │⭔ !openai <pertanyaan>
 │⭔ !ai <pertanyaan>
+│⭔ !halodok <pertanyaan>
+│⭔ !dok <pertanyaan>
+│⭔ !bang <pertanyaan>
 │⭔ !aiimage <pencarian>
 │⭔ !gimage <pencarian>
 ╰───────⭓
-╭──❍ ⟩>
-│⭔ 𝙊𝙒𝙉𝙀𝙍 𝙈𝙀𝙉𝙐 
-│⭔ !error
-│⭔ !clearerr
-│⭔ !siaran
-│⭔ !session
-│⭔ !resetdb
-│⭔ !runtime
-│⭔ !setexif
-│⭔ !setwm
-│⭔ !setfooter
-│⭔ !setppbot
-│⭔ !addprem
-│⭔ !delprem
-│⭔ !bc
-│⭔ !bctext
-│⭔ !bcvideo
-│⭔ !bcaudio
-│⭔ !bcimage
-│⭔ !broadcast
-│⭔ !restart
-╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙂𝙍𝙊𝙐𝙋 𝙈𝙀𝙉𝙐 
 │⭔ !delete
@@ -105,6 +110,7 @@ return`
 │⭔ !demote @tag 
 │⭔ !promote @tag
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘼𝙐𝙏𝙊𝘿𝙀𝘾𝙏 𝙈𝙀𝙉𝙐 
 │⭔ !sadcat
@@ -112,22 +118,23 @@ return`
 │⭔ !stalknpm
 │⭔ !stalkgithub
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙈𝙀𝙉𝙐
 │⭔ !tiktok
-│⭔ !ytmp3
-│⭔ !ytmp4
 │⭔ !pinterest
 │⭔ !playmp3
+│⭔ !play <query>
 │⭔ !playmp4
 │⭔ !gitclone
 │⭔ !mediafire
 │⭔ !soundcloud 
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘾𝙊𝙉𝙑𝙀𝙍𝙏 𝙈𝙀𝙉𝙐 
-│⭔ !tts
-│⭔ !tts2
+│⭔ !tts <Indonesian>
+│⭔ !tts2 <english>
 │⭔ !ttp2
 │⭔ !tourl
 │⭔ !upload
@@ -159,6 +166,7 @@ return`
 │⭔ !emojmix2 
 │⭔ !emojimix2
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙏𝙊𝙊𝙇𝙎 𝙈𝙀𝙉𝙐 
 │⭔ !translate
@@ -172,6 +180,7 @@ return`
 │⭔ !debase32 
 │⭔ !debase64
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘽𝙐𝙂𝙑𝙄𝙋 𝙈𝙀𝙉𝙐 
 │⭔ !santet @tag
@@ -182,6 +191,7 @@ return`
 │⭔ !logout 628xxx
 │⭔ !bug 628xxx
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘼𝙉𝙊𝙉𝙔𝙈𝙊𝙐𝙎 𝙈𝙀𝙉𝙐 
 │⭔ !buatroom 628xxx
@@ -189,11 +199,13 @@ return`
 │⭔ !stopchat <only room>
 │⭔ !menfess 628xx|bot|hai
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 𝙈𝙀𝙉𝙐 
 │⭔ !latintoaksara 
 │⭔ !aksaratolatin
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔𝙍𝘼𝙉𝘿𝙊𝙈 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 
 │⭔ !dadu
@@ -203,32 +215,72 @@ return`
 │⭔ !gawrgura 
 │⭔ !amongus
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙊𝙏𝙃𝙀𝙍 𝙈𝙀𝙉𝙐 
 │⭔ !ppcouple
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝘼𝙉𝙄𝙈𝙀 𝙈𝙀𝙉𝙐 
 │⭔ !jadianime <reply/kirim gambar>
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙎𝙊𝙐𝙉𝘿 𝙈𝙀𝙉𝙐 
 │⭔ !sound1-119
 │⭔ !audio1-40
 │⭔ example: !sound3
 ╰───────⭓
+
 ╭──❍ ⟩>
 │⭔ 𝙍𝘼𝙉𝘿𝙊𝙈 𝙄𝙈𝘼𝙂𝙀
 │⭔ !islamic
-╰───────⭓`
+╰───────⭓
+
+                            ${fot}`
 }
+
+exports.Mema = (premnya,isOwner,ucapanWaktu,fot) => {
+return` 
+*Premium* : ${premnya}
+*Owner* : ${isOwner}
+
+    *Salam* : ${ucapanWaktu}
+    
+╭──❍ ⟩>
+│⭔ 𝙊𝙒𝙉𝙀𝙍 𝙈𝙀𝙉𝙐 
+│⭔ !error
+│⭔ !clearerr
+│⭔ !siaran
+│⭔ !session
+│⭔ !resetdb
+│⭔ !setexif
+│⭔ !setwm
+│⭔ !setfooter
+│⭔ !setppbot
+│⭔ !addprem
+│⭔ !delprem
+│⭔ !bc
+│⭔ !bctext
+│⭔ !bcvideo
+│⭔ !bcaudio
+│⭔ !bcimage
+│⭔ !broadcast
+│⭔ !restart
+╰───────⭓
+
+                  ${fot}`
+
+}
+
 //menu nya
-exports.menu = (premnya,isOwner,ucapanWaktu) => {
+exports.menu = (premnya,isOwner,ucapanWaktu,fot) => {
 return`*Premium* : ${premnya}
 *Owner* : ${isOwner}
 
     *Salam* : ${ucapanWaktu}
-─────── Baphomate ────
+─────── NS - BOT MD ────
 👋 Hai kak! Ada yang bisa saya bantu?
 ────────────────────
 𝕾  *Menu:*
@@ -242,31 +294,33 @@ silahkan pilih menu di atas dengan mengetik 1/2/3 example: !1
 ────────────────────
 𝕾 • Di Harapkan untuk berlangganan premium agar dapat menikmati fitur-fitur premier dan jangan lupa terus Suport tim kami! • 
 ────────────────────
-✍️ Type *!help* to display menu this back.`
+✍️ Type *!help* to display menu this back
+
+                        ${fot}.`
 }
 //changelog
-exports.change = (premnya,isOwner) => {
+exports.change = (premnya,isOwner,fot) => {
 return`
 *Premium* : ${premnya}
 *Owner* : ${isOwner}
 
 CHANGELOG:
-•Baphomate sedang dalam pengembangan 
+•Baphomate - BOT sedang dalam pengembangan 
 •Bot versi 0.1.0
 •Developer Mas Budy
 •Thanks To Allah SWT and Nabi Muhammad Saw
 •Kepada Creator Bot dan RestApi
 
-Thanks to user Baphomate`
+Thanks to user NS - BOT MD
+
+                        ${fot}`
 }
 //simplemenu
-exports.simpmenu = (premnya,isOwner,ucapanWaktu) => {
+exports.simpmenu = (premnya,isOwner,fot) => {
 return`*Premium* : ${premnya}
 *Owner* : ${isOwner}
 
-««[ Baphomate ]»»
-
-{•----──❍ ⟩><⟨❍──----•}
+««[ 𝑵𝑺 - 𝑩𝑶𝑻 𝑴𝑫 ]»»
 
 ──❍ ⟩>*STIKER*<⟨❍──
  sticker
@@ -288,9 +342,13 @@ example : !sticker
 
 ──❍ ⟩>*DOWNLOAD*<⟨❍──
 
- playmp3
-" Mencari dan mendownload lagu "
-example : !playmp3 dj kane
+ play
+" Mencari dan mendownload lagu/video "
+example : !play dj kane
+
+ gdrive
+" Mendownload file google Drive "
+example : !gdrive <link>
 
  tiktok
 " Mendownload tiktok berdasarkan link "
@@ -302,7 +360,11 @@ example : !tiktok <Link>
 " Merubah foto menjadi anime "
 example : !jadianime <reply img>
 
- teks to voice
+ tts <Indonesian>
+" Merubah teks menjadi voice "
+example : !tts <teks>
+
+ tts2 <English>
 " Merubah teks menjadi voice "
 example : !tts <teks>
 
@@ -312,6 +374,21 @@ example : !tts <teks>
 " ChatBot ChatGPT Menelusuri Query "
 example : !openai penelitian nasa 
 
+ halodok
+" Konsultasi Dengan Dokter ChatGpt"
+example : !halodok obat untuk sakit gigi apa
+
+ bang
+" Ngobrol Dengan ChatBot Biar gak gabut "
+example : !bang boleh kenalan gak
+
+──❍ ⟩>*OTHER FEATURE*<⟨❍──
+
+ totalhit
+" Untuk Mengetahui Jumlah Hit Fitur "
+example : !totalhit
+
+             ${fot}
 {•----──❍ ⟩><⟨❍──----•}`
 }
 
@@ -342,8 +419,8 @@ Number: 085691724140
 *Payment Via GoPay*
 Number: 085691724140
 
-*Payment Via Pulsa(Indosat)*
-Number : 085691724140
+*Payment Via Pulsa Im3*
+Number: 085691724140
 
 ${monoSpace}Terimakasih untuk kamu yang sudah donasi untuk perkembangan bot ini ^_^${monoSpace}
 
@@ -354,18 +431,18 @@ exports.infoOwner = () =>{
 return`╒──「 *INFO OWNER* 」───────╮
 │      
 │ *Data Profil*
-│ • *Nama:* Null   
-│ • *Umur:* Null     
+│ • *Nama:* R4id3n      
+│ • *Umur:* null      
 │ • *Hoby:* Turu/Game    
-│ • *Askot:* Null
-│ • *Konten:* Null
+│ • *Askot:* Andromeda
+│ • *Konten:* Creator 
 │
-│_-_-_-_-_-_-_-_-_-_.
+│_iam developer bot whatsapp._   
 │                 
 │ *Sosial Media*
-│ • *Whatsapp:* wa.me/+6285691724140
+│ • *Whatsapp:* 085691724140    
 │ • *Youtube:* null
-│ • *Github:* null
+│ • *Github:* https://github.com/Azarela-Vnk
 ╰────────────────────╛
  `
 }
